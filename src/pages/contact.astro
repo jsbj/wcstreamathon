@@ -1,0 +1,35 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import FormHero from '../components/blocks/hero/ContactHero.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+import ContactCards from '../components/blocks/contact/ContactCards.astro'
+import SocialProof from '../components/blocks/socialproof/Basic.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Stream-a-thon | Get in Touch with Us',
+	description:
+		'Contact the Weather & Climate Stream-a-thon organizers.'
+}
+// - Page Header
+const header = {
+	title: 'Contact the organizers.',
+	text: "The current organizing team is Jonah Bloch-Johnson, Marc Alessi, Andrew Williams, and two anonymous organizers. We're looking for volunteers!"
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<FormHero
+		title={header.title}
+		text={header.text}
+		id="contact"
+		classes="bg-neutral-950/80 dark:bg-neutral-950/80"
+	/>
+	<!-- <ContactCards classes="dark:bg-neutral-950/80" /> -->
+	<!-- <SocialProof classes="dark:bg-neutral-950/80" /> -->
+	<!-- <CTA /> -->
+</Layout>

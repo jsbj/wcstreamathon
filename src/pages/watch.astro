@@ -1,0 +1,64 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Feature from '../components/blocks/features/FeatureSticky.astro'
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+
+// Data
+import featuresData from '../data/json-files/featuresData.json'
+// - Feature Categories
+const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
+const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
+const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
+const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
+const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
+
+// Content
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Stream-a-thon | Watch',
+	description:
+		"Information for how to watch the Weather & Climate Stream-a-thon"
+}
+// // - Page Header
+// const header = {
+// 	title: "Want to speak?", // <strong>speak</strong>?",
+// 	text: "<p>We're asking for speakers to volunteer from throughout the US meteorology and climate science communities. If your work has been funded by the US federal government, and you have been affected or may be affected by past or proposed cuts, we want to give you the chance to make your voice heard. We are hoping to fill five solid days of speaking slots, starting on Wed May 28th at noon EST. We would especially appreciate volunteers willing to speak during the continent US's early hours.</p><p>Each speaking slot is for 20 minutes. We strongly encourage participants to follow the following structure:<ul><li><em>elevator pitch</em> - in a minute, who are you, what do you do, how does it help the public, and how is it threatened by the recent and proposed cuts?</li><li><em>introduce yourself</em> - who are you? If you want, talk about what brought you to meteorology and/or climate science.</li><li><em>background for your area</em> - in terms that everyday people can understand, explain your area of work and how it's important to their lives. Good visualizations welcome.</li><li><em>one insight</em> - share with us one digestible insight from your work. What is something you found that you think is important, or that you find exciting?</li><li><em>the cuts</em> - how is your work affected by the past or proposed cuts?</li><li><em>hope</em> - if the funding is maintained or restored, what would you be able to do?</li></ul></p><p>If you are interested in volunteering, please fill out this <a href='https://docs.google.com/forms/d/e/1FAIpQLScUCVgVH85l3Hjvr4ognyVQQYibTTEaWal-GW2UiyBiqyJwsQ/viewform?usp=dialog'>Google Form</a>. There are options to request to speak together with a friend or colleague, or to have your talk presented anonymously.</p>"
+// }
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<!-- <Hero title={header.title} text={header.text} /> -->
+	<!-- <Feature
+		title="Insightful Analytics"
+		text="Delve into your data with precision and uncover actionable insights."
+		data={featuresAnalytics}
+	/>
+	<Feature
+		title="Efficiency Unleashed"
+		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
+		data={featuresSecurity}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="Ultimate Data Protection"
+		text="Keep your data safe with top-notch security measures and real-time threat detection."
+		data={featuresProductivity}
+	/>
+	<Feature
+		title="Seamless Connectivity"
+		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
+		data={featuresIntegrations}
+		classes="bg-neutral-50 dark:bg-neutral-900"
+	/>
+	<Feature
+		title="24/7 Expert Help"
+		text="Our friendly support team is always here to assist you with any questions or issues."
+		data={featuresSupport}
+	/> -->
+	<CTA />
+</Layout>

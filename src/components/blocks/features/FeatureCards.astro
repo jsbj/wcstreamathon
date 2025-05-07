@@ -1,0 +1,106 @@
+---
+// Feature Cards grid Section
+// ------------
+// Description: A grid of cards with feature information in a 4 column layout.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/FeatureCard.astro'
+
+// Content
+// - Cards
+import feature01 from '../../../assets/cards/feature-01.svg'
+import feature02 from '../../../assets/cards/feature-02.svg'
+import feature03 from '../../../assets/cards/feature-03.svg'
+import feature04 from '../../../assets/cards/feature-04.svg'
+import feature05 from '../../../assets/cards/feature-05.svg'
+---
+
+<Section id="features">
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">Learn more about the cuts</h2>
+			<!-- <p class="pb-0 text-lg">
+				Don't you think?
+			</p> -->
+		</Col>
+	</Row>
+	<Row>
+		<!-- <Col span="4"> -->
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="US weather forecasting is more crippled than previously known as hurricane season nears"
+				subtitle="Andrew Freedman, CNN"
+				link="https://www.cnn.com/2025/05/02/weather/nws-forecasting-layoffs-trump"
+			/>
+			<Card
+				title="Former Weather Service Leaders Warn Staffing Cuts Could Lead to 'Loss of Life'"
+				subtitle="Camille Baker, The New York Times"
+				link="https://www.nytimes.com/2025/05/02/weather/nws-staffing-cuts-trump.html"
+			/>
+			<Card
+				title="Trump administration dismisses nearly 400 scientists working on congressionally mandated national climate report"
+				subtitle="Tracy J. Wholf, CBS"
+				link="https://www.cbsnews.com/news/national-climate-assessment-report-scientists-fired/"
+			/>
+			<Card
+				title="5 Reasons NOAA and NASA Cuts Will be Disastrous for Everyone in the US"
+				subtitle="Marc Alessi, Union of Concerned Scientists"
+				link="https://blog.ucs.org/marc-alessi/5-reasons-noaa-and-nasa-cuts-will-be-disastrous-for-everyone-in-the-us/"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="White House Proposal Could Gut Climate Modeling the World Depends On "
+				subtitle="Abrahm Lustgarten, ProPublica"
+				link="https://www.propublica.org/article/trump-noaa-budget-cuts-climate-change-modeling-princeton-gfdl"
+			/>
+			<Card
+				title="Experts say US weather forecasts will worsen as DOGE cuts mean fewer balloon launches"
+				subtitle="Seth Borenstein, AP News"
+				link="https://apnews.com/article/weather-forecasts-worsen-doge-trump-cuts-tornado-da573a044916c06cebcdb92b1f1452e6"
+			/>
+			<Card
+				title="Trump Administration Cuts Research Funding, Claiming It Creates 'Climate Anxiety'"
+				subtitle="Brad Plumer and Austyn Gaffney, The New York Times"
+				link="https://www.nytimes.com/2025/04/09/climate/trump-noaa-princeton-climate-research.html"
+			/>
+			<Card
+			title="Trump administration cancels top NASA climate lab's lease at Columbia University "
+			subtitle="Andrew Freedman, CNN"
+			link="https://www.cnn.com/2025/04/24/climate/nasa-lease-canceled-columbia/index.html"
+		/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Meteorologists say NWS cuts degraded forecasts during recent storms"
+				subtitle="Evan Bush, Maggie Vespa, and Samira Puskar, NBC"
+				link="https://www.nbcnews.com/science/science-news/meteorologists-say-nws-cuts-degraded-forecasts-recent-storms-rcna202386"
+			/>
+			<Card
+				title="Trump's budget plan eviscerates weather and climate research, and it could be enacted immediately"
+				subtitle="Ella Nilsen, CNN"
+				link="https://www.cnn.com/2025/04/11/climate/trump-noaa-budget-cuts"
+			/>
+			<Card
+				title="Trump cuts target world-leading greenhouse gas observatory in Hawaii"
+				subtitle="Gloria Dickie, Reuters"
+				link="https://www.reuters.com/sustainability/climate-energy/trump-cuts-target-world-leading-greenhouse-gas-observatory-hawaii-2025-03-11/"
+			/>
+			<Card
+				title="Scientists say NOAA cuts by Trump undermine improvements in hurricane forecasts"
+				subtitle="Greg Allen, NPR"
+				link="https://www.npr.org/2025/04/25/nx-s1-5361474/noaa-cuts-hurricane-forecast-improvements-trump"
+			/>		
+
+
+		</Col>
+	</Row>
+</Section>
+
+
+

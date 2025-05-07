@@ -1,0 +1,28 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/HomeCTA.astro'
+import Features from '../components/blocks/features/FeatureCards.astro'
+import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
+import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - Testimonial background
+import testimonialBackground from '../assets/testimonial-bg-01.webp'
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Stream-a-thon',
+	description:
+		'The Weather & Climate Stream-a-thon, starting May 28th, is an appeal from US meteorologists and climate scientists to maintain the funding we need to help Americans plan for their future.'
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero />
+	<Features />
+	<!-- <Testimonial bg={testimonialBackground} bgPosition="right" /> -->
+	<!-- <HighlightBlocks /> -->
+</Layout>

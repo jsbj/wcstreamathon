@@ -1,0 +1,68 @@
+---
+// Home page CTA Section
+// ------------
+// Description: A centered call to action section that contains: a title, text, a user review snippet, a button and a image.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import AvatarGroup from '../../ui/AvatarGroup.astro'
+
+// Content
+// - Hero Image
+import heroImage from '../../../assets/hero-01.png'
+// - Avatars
+import user1 from '../../../assets/avatars/avatar-01.webp'
+import user2 from '../../../assets/avatars/avatar-02.webp'
+import user3 from '../../../assets/avatars/avatar-03.webp'
+const avatars = [
+	{ image: { src: user1.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user2.src, alt: 'user name' }, link: '/' },
+	{ image: { src: user3.src, alt: 'user name' }, link: '/' }
+]
+---
+
+<!-- <Section id="intro" padding="top" classes="bg-neutral-50 dark:bg-neutral-900"> -->
+<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<h1>SAVE AMERICA'S FORECASTS</h1>
+			<p class="pb-0 text-lg" style="color: white;">Whether it's tomorrow's temperatures or the sea level in fifty years, Americans need to plan for our futures. For generations, the US government has invested in the science that helps us do so, building one of the greatest meteorology and climate science communities in the world. </p>
+			<!-- Along the way, we <a href="https://www.vos.noaa.gov/MWL/dec_07/weatherprediction.shtml">invented computerized weather forecasts</a> and <a href="https://www.gfdl.noaa.gov/awards/former-noaa-scientist-suki-manabe-shares-nobel-prize-in-physics-for-pioneering-climate-prediction/">modern-day climate modeling</a>, and <a href="https://www.reuters.com/sustainability/climate-energy/trump-cuts-target-world-leading-greenhouse-gas-observatory-hawaii-2025-03-11/">first documented the increase in atmospheric CO<sub>2</sub></a>. -->
+			<p class="pb-0 text-lg" style="color: white;">In recent months, this community have been thwarted in our mission of serving the public due to <a href="/cuts">erratic and potentially illegal cuts and firings</a>. These actions have <a href="https://www.nbcnews.com/science/science-news/meteorologists-say-nws-cuts-degraded-forecasts-recent-storms-rcna202386">already hurt our forecasts</a>, endangering Americans as <a href="https://www.cnn.com/2025/05/02/weather/nws-forecasting-layoffs-trump">hurricane season approaches</a>. Legally required assessments of the climate <a href="https://www.cbsnews.com/news/national-climate-assessment-report-scientists-fired/">are being stopped</a>, and far more drastic cuts are <a href="https://www.cnn.com/2025/04/11/climate/trump-noaa-budget-cuts">being proposed</a>.</p>
+
+			<!-- <ChipNotification radius="rounded-full" classes="mb-6">
+				<strong>30K+</strong> satisfied customers
+				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
+			</ChipNotification> -->
+			<!-- <h1>The Weather & Climate <strong>Stream-a-thon</strong></h1> -->
+
+			<p class="pb-0 text-lg" style="color: white;"><b>But it's not too late to stop these cuts.</b> Already, public pressure has helped to <a href="https://www.theassemblync.com/environment/noaa-weather-center-chapel-hill-funding-trump/">reopen shuttered weather data centers</a>. To help keep this pressure building, meteorologists and climate scientists from across America want to fulfill our mission by sharing our science with you - so we're coming to your screens, speaking and answering your questions, in a marathon, round-the-clock live stream:</p>
+			<h3>The Weather & Climate Stream-a-thon</h3>
+				
+			<p class="pb-0 text-lg" style="color: white;">
+				Starting Wednesday, May 28th, join meteorologists and climate scientists from across the US as we share our work, and show you what makes it so vital. We will clarify the impact of the cuts on this research, and answer your questions about weather and climate research in the US. Information on how to watch is coming soon. If you are a scientist who wants to participate, please visit this <a href="/speakers">speakers</a> page to learn more.</p>
+			<!-- <Button size="lg" link="/">Get started for free</Button> -->
+		</Col>
+		<Col span="2" />
+		<Col span="2" />
+		<Col span="8">
+			<Image
+				src='/satellite.webp'
+				width=1300
+				height=775
+				alt="A NOAA satellite's view of clouds over America."
+				class="translate-y-8 shadow-2xl shadow-neutral-950 dark:shadow-neutral-950"
+				format="webp"
+			/></Col>
+		<Col span="2" />
+	</Row>
+</Section>
