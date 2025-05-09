@@ -21,9 +21,9 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'The Weather & Climate Stream-a-thon',
+	siteTitle: 'The Weather & Climate Livestream',
 	siteDescription:
-		'The Weather & Climate Stream-a-thon is an event to highlight the value of maintaining US federal funding for meteorology and climate science.',
+		'The Weather & Climate Livestream is an event to highlight the value of maintaining US federal funding for meteorology and climate science.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: 'logo.png', //'/logo.svg',

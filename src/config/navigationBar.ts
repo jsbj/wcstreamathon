@@ -35,7 +35,7 @@ export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.png',
 		alt: 'The tailwind astro theme',
-		text: 'The Weather & Climate Stream-a-thon'
+		text: 'The Weather & Climate Livestream'
 	},
 	navItems: [
 		// { name: 'Home', link: '/' },
