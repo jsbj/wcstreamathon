@@ -1,0 +1,27 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/HomeCTA.astro'
+import Features from '../components/blocks/features/LearnFeatureCards.astro'
+import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
+import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - Testimonial background
+import testimonialBackground from '../assets/testimonial-bg-01.webp'
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Livestream | Learn more about weather and climate',
+	description:
+		"Join us starting May 28th, as meteorologists and climate scientists from across the US share their research and answer your questions."
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Features />
+	<!-- <Testimonial bg={testimonialBackground} bgPosition="right" /> -->
+	<!-- <HighlightBlocks /> -->
+</Layout>

@@ -40,18 +40,19 @@ export const navigationBarData: NavData = {
 	navItems: [
 		// { name: 'Home', link: '/' },
 		// { name: 'How to watch', link: '/watch' },
-		{ name: 'About the cuts', link: '/cuts' },
+		// { name: 'Learn', link: '/learn' },
+		// { name: 'The cuts', link: '/cuts' },
 		// { name: 'Want to speak?', link: '/speakers' },
-		// {
-		// 	name: 'Learn more abou the cuts',
-		// 	link: '#',
-		// 	submenu: [
-		// 		{ name: 'Blog', link: '/blog' },
-		// 		{ name: 'Changelog', link: '/changelog' },
-		// 		{ name: 'FAQ', link: '/faq' },
-		// 		{ name: 'Terms', link: '/terms' }
-		// 	]
-		// },
+		{
+			name: 'Learn about...',
+			link: '#',
+			submenu: [
+				{ name: 'weather & climate', link: '/learn' },
+				{ name: 'the cuts', link: '/cuts' } //,
+				// { name: 'FAQ', link: '/faq' },
+				// { name: 'Terms', link: '/terms' }
+			]
+		},
 		{ name: 'Contact', link: '/contact' }
 	],
 	// navActions: [{ name: 'Take action', link: '/speakers', style: 'primary', size: 'lg' }]

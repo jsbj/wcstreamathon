@@ -1,0 +1,134 @@
+---
+// Feature Cards grid Section
+// ------------
+// Description: A grid of cards with feature information in a 4 column layout.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/FeatureCard.astro'
+
+// Content
+// - Cards
+import feature01 from '../../../assets/cards/feature-01.svg'
+import feature02 from '../../../assets/cards/feature-02.svg'
+import feature03 from '../../../assets/cards/feature-03.svg'
+import feature04 from '../../../assets/cards/feature-04.svg'
+import feature05 from '../../../assets/cards/feature-05.svg'
+---
+
+<Section id="features">
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">Watch the livestream to learn more about:</h2>
+			<!-- <p class="pb-0 text-lg">
+				Don't you think?
+			</p> -->
+		</Col>
+	</Row>
+	<Row>
+		<!-- <Col span="4"> -->
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+							title="Agriculture and climate"
+							subtitle="Source: EPA"
+							link="https://www.epa.gov/climateimpacts/climate-change-impacts-agriculture-and-food-supply"
+						/>
+			<Card
+							title="Clouds"
+							subtitle="Source: NOAA"
+							link="https://www.noaa.gov/jetstream/clouds"
+						/>
+			<Card
+							title="Extreme heat in the US"
+							subtitle="Source: EPA"
+							link="https://www.epa.gov/climatechange-science/extreme-heat"
+						/>
+			<Card
+							title="Hurricanes"
+							subtitle="Source: NOAA"
+							link="https://www.noaa.gov/education/resource-collections/weather-atmosphere/hurricanes"
+						/>
+			<Card
+							title="Ocean heat"
+							subtitle="Source: NASA"
+							link="https://climate.nasa.gov/vital-signs/ocean-warming/?intent=121"
+						/>
+			<Card
+							title="The water cycle"
+							subtitle="Source: UCAR SciEd"
+							link="https://scied.ucar.edu/learning-zone/climate-change-impacts/water-cycle-climate-change"
+						/>
+			</Col>
+			<Col span="4" classes="flex flex-col gap-6">
+			<Card
+							title="Air quality"
+							subtitle="Source: UCAR SciEd"
+							link="https://scied.ucar.edu/learning-zone/air-quality"
+						/>
+			<Card
+							title="Drought"
+							subtitle="Source: NOAA and NIDIS"
+							link="https://www.drought.gov/what-is-drought/drought-basics"
+						/>
+			<Card
+							title="Floods & Precipitation"
+							subtitle="Source: NOAA"
+							link="https://water.noaa.gov"
+						/>
+			<Card
+							title="Measuring CO₂ in the atmosphere"
+							subtitle="Source: NOAA Global Monitoring Lab"
+							link="https://gml.noaa.gov/obop/mlo/programs/esrl/co2/co2.html"
+						/>
+			<Card
+							title="Sea level rise"
+							subtitle="Source: UCAR SciEd"
+							link="https://scied.ucar.edu/learning-zone/climate-change-impacts/rising-sea-level"
+						/>
+			<Card
+							title="Water quality"
+							subtitle="Source: EPA"
+							link="https://www.epa.gov/waterdata/water-quality-data"
+						/>
+			</Col>
+			<Col span="4" classes="flex flex-col gap-6">
+			<Card
+							title="The carbon cycle"
+							subtitle="Source: NASA"
+							link="https://earthobservatory.nasa.gov/features/CarbonCycle"
+						/>
+			<Card
+							title="El Niño and La Niña"
+							subtitle="Source: NOAA"
+							link="https://www.noaa.gov/education/resource-collections/weather-atmosphere/el-nino"
+						/>
+			<Card
+							title="Glaciers"
+							subtitle="Source: USGS"
+							link="https://www.usgs.gov/faqs/what-a-glacier"
+						/>
+			<Card
+							title="Ocean acidification"
+							subtitle="Source: NOAA"
+							link="https://oceanservice.noaa.gov/facts/acidification.html"
+						/>
+			<Card
+							title="Soil"
+							subtitle="Source: USDA"
+							link="https://www.climatehubs.usda.gov/commodity/soil"
+						/>
+			<Card
+							title="Weather stations"
+							subtitle="Source: NOAA"
+							link="https://www.noaa.gov/education/resource-collections/weather-atmosphere/weather-observations"
+						/>
+			</Col>
+	</Row>
+</Section>
+
+
+
