@@ -51,7 +51,7 @@ export const navigationBarData: NavData = {
 				{ name: 'the schedule', link: '/schedule' },
 				{ name: 'the weather & climate', link: '/learn' },
 				{ name: 'the cuts', link: '/cuts' },
-				{ name: 'how to contact us', link: '/cuts' } //,
+				{ name: 'how to contact us', link: '/contact' } //,
 				// { name: 'FAQ', link: '/faq' },
 				// { name: 'Terms', link: '/terms' }
 			]
