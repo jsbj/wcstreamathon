@@ -25,7 +25,7 @@ type Props = {
 	title?: string
 	subtitle?: string
 	subtitles?: any
-	st?: string
+	subt?: string
 	titleSize?: 'sm' | 'base' | 'lg' | 'xl'
 	image?: any
 	icon?: string
@@ -62,8 +62,8 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 			)
 		}
 		  {
-			subtitles && subtitles.map((st) => (
-				<p class='pb-0 text-lg' style='color: white' set:html={st} />
+			subtitles && subtitles.map((subt) => (
+				<p class='pb-0 text-lg' style='color: white' set:html={subt} />
 			))
 			}
 		{
