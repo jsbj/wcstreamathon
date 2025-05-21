@@ -5,7 +5,8 @@ import Layout from '../layouts/Layout.astro'
 // - UI
 import Feature from '../components/blocks/features/FeatureSticky.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
-import CTA from '../components/blocks/CTA/BasicDark.astro'
+import WatchCTA from '../components/blocks/WatchCTA/BasicDark.astro'
+import Features from '../components/blocks/features/ScheduleCards.astro'
 
 
 // Data
@@ -32,33 +33,6 @@ const SEO = {
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<!-- <Hero title={header.title} text={header.text} /> -->
-	<!-- <Feature
-		title="Insightful Analytics"
-		text="Delve into your data with precision and uncover actionable insights."
-		data={featuresAnalytics}
-	/>
-	<Feature
-		title="Efficiency Unleashed"
-		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
-		data={featuresSecurity}
-		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="Ultimate Data Protection"
-		text="Keep your data safe with top-notch security measures and real-time threat detection."
-		data={featuresProductivity}
-	/>
-	<Feature
-		title="Seamless Connectivity"
-		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
-		data={featuresIntegrations}
-		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="24/7 Expert Help"
-		text="Our friendly support team is always here to assist you with any questions or issues."
-		data={featuresSupport}
-	/> -->
-	<CTA />
+	<WatchCTA />
+	<Features />
 </Layout>

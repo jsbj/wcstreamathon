@@ -1,0 +1,44 @@
+---
+// Basic Dark Call To Action section
+// ------------
+// Description: A centered call to action section that contains: a title, text, background image, notification and a button.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import CTA from '../../ui/CTA.astro'
+import Button from '../../ui/Button.astro'
+import ChipNotification from '../../ui/ChipNotification.astro'
+import { Image } from 'astro:assets'
+import Highlight from '../../ui/Highlight.astro'
+
+// Content
+import ctaImage from '../../../assets/cta-dark-bg.webp'
+import badge from '../../../assets/badge.svg'
+---
+
+<Section>
+	<Row>
+		<Col span="1" />
+		<Col span="10">
+			<CTA
+				title="Join us on YouTube"
+				text="The livestream will be live from Wed. May 28th, 3pm ET/12pm PT to Sun. June 1st, 8pm ET/5pm PT.<br>Join our channel and see you then!"
+				mode="dark"
+				bg={ctaImage}
+			>
+			<!-- <p class="pb-0 text-lg" style="color: white;">From </p> -->
+				<!-- <ChipNotification radius="rounded-full" classes="mb-6 box">
+					<Image src={badge} alt="Product of the Year" class="h-12 w-12" slot="button" />
+					<span class="hidden md:block">#1 Product of the Year,</span>
+					<Highlight classes="md:ml-2"> Product Hunt </Highlight>
+				</ChipNotification> -->
+				<Button size="lg" style="primary" type="link" link="https://www.youtube.com/@wclivestream">The Weather & Climate Livestream YouTube Channel</Button>
+			</CTA>
+		</Col>
+		<Col span="1" />
+	</Row>
+</Section>

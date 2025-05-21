@@ -44,16 +44,20 @@ export const navigationBarData: NavData = {
 		// { name: 'The cuts', link: '/cuts' },
 		// { name: 'Want to speak?', link: '/speakers' },
 		{
-			name: 'Learn about...',
+			name: 'More about...',
 			link: '#',
 			submenu: [
-				{ name: 'weather & climate', link: '/learn' },
-				{ name: 'the cuts', link: '/cuts' } //,
+				
+				{ name: 'the schedule', link: '/schedule' },
+				{ name: 'the weather & climate', link: '/learn' },
+				{ name: 'the cuts', link: '/cuts' },
+				{ name: 'how to contact us', link: '/cuts' } //,
 				// { name: 'FAQ', link: '/faq' },
 				// { name: 'Terms', link: '/terms' }
 			]
 		},
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'How to watch', link: '/watch' },
+		// { name: 'Contact', link: '/contact' }
 	],
 	// navActions: [{ name: 'Take action', link: '/speakers', style: 'primary', size: 'lg' }]
 	navActions: [{ name: 'Want to speak?', link: '/speakers', style: 'primary', size: 'lg' }]

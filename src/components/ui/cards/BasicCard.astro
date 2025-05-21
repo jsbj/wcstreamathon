@@ -24,6 +24,7 @@ import CardBody from './partials/CardBody.astro'
 type Props = {
 	title?: string
 	subtitle?: string
+	subtitles?: any
 	titleSize?: 'sm' | 'base' | 'lg' | 'xl'
 	image?: any
 	icon?: string
@@ -31,7 +32,7 @@ type Props = {
 	type?: 'image-top' | 'image-bottom'
 	classes?: string
 }
-const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes } = Astro.props
+const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes, subtitles } = Astro.props
 ---
 
 <Card classes={classes} link={link}>
@@ -59,7 +60,13 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 				<h3 class:list={[['text-' + `${titleSize} ` + `lg:text` + `${titleSize}`]]}>{title}</h3>
 			)
 		}
-		{subtitle && <p>{subtitle}</p>}
+		  {
+			subtitles && subtitles.map((st) => (
+				<p class='pb-0 text-lg' style='color: white' set:html={st} />
+			))
+			}
+		{
+		subtitle && <p class="pb-0 text-lg" style="color: white" set:html={subtitle} />}
 		<slot />
 	</CardBody>
 </Card>

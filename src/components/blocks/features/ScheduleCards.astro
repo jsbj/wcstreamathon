@@ -1,0 +1,92 @@
+---
+// Feature Cards grid Section
+// ------------
+// Description: A grid of cards with feature information in a 4 column layout.
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Card from '../../ui/cards/FeatureCard.astro'
+
+// Content
+// - Cards
+import feature01 from '../../../assets/cards/feature-01.svg'
+import feature02 from '../../../assets/cards/feature-02.svg'
+import feature03 from '../../../assets/cards/feature-03.svg'
+import feature04 from '../../../assets/cards/feature-04.svg'
+import feature05 from '../../../assets/cards/feature-05.svg'
+---
+
+<Section id="features">
+	<Row>
+		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
+			<h2 class="text-pretty">Schedule highlights</h2>
+			<!-- <p class="pb-0 text-lg">
+				Don't you think?
+			</p> -->
+		</Col>
+	</Row>
+	<Row>
+		<!-- <Col span="4"> -->
+		<Col span="6" classes="flex flex-col gap-6">
+			<Card
+				title="Wednesday, May 28th"
+				subtitles={["3-5pm ET/12-2pm PT<br>Live from the NASA GISS lab's final hours, featuring Kate Marvel","6:30-11pm ET/3:30-8pm PT<br>Primetime talks featuring: <ul><li class='pb-0 text-lg' style='color: white'>Ben Santer</li> <li class='pb-0 text-lg' style='color: white'>Bernadette Woods Placky</li> <li class='pb-0 text-lg' style='color: white'>Kerry Emanuel</li> <li class='pb-0 text-lg' style='color: white'>Andy Dessler</li> <li class='pb-0 text-lg' style='color: white'>Ralph Keeling</li></ul>"]}
+			/>
+		</Col>
+		<Col span="6" classes="flex flex-col gap-6">
+		<Card
+			title="Thursday, May 29th"
+			subtitles={["5:30-6:15pm ET/2:30-3:45pm PT<br>American Meteorological Society panel with David Stensrud (president, 2025) and Alan Sealls (president-elect, 2026)","6:15-11pm ET/3:15pm-8pm PT<br>Primetime talks featuring: <ul><li class='pb-0 text-lg' style='color: white'>Karen McKinnon</li> <li class='pb-0 text-lg' style='color: white'>Adam Sobel</li> <li class='pb-0 text-lg' style='color: white'>Anand Gnanadesikan</li><li class='pb-0 text-lg' style='color: white'>Chris Vagasky</li></ul>"]}
+		/>
+		</Col>
+
+	</Row>
+	<br>
+	<Row>
+		<!-- <Col span="4"> -->
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+			title="Friday, May 30th"
+			subtitle="8-11pm ET/5-8pm PT<br>Primetime talks featuring: <ul><li class='pb-0 text-lg' style='color: white'>Isaac Held</li> <li class='pb-0 text-lg' style='color: white'>Jeff Masters</li> <li class='pb-0 text-lg' style='color: white'>Suzana Camargo</li></ul>"
+
+			
+		/>
+	</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+				title="Saturday, May 31st"
+			subtitle="8-11pm ET/5-8pm PT<br>Primetime talks featuring: <ul><li class='pb-0 text-lg' style='color: white'>John Morales</li> <li class='pb-0 text-lg' style='color: white'>Kristina Dahl</li> <li class='pb-0 text-lg' style='color: white'>Zeke Hausfather</li></ul>"
+			/>
+		</Col>
+		<Col span="4" classes="flex flex-col gap-6">
+			<Card
+			title="Sunday, June 1st"
+			subtitle="8-11pm ET/5-8pm PT<br>Primetime talks featuring: <ul><li class='pb-0 text-lg' style='color: white'>Zack Labe</li></ul>"
+		/>
+		</Col>
+		<!-- <Col span="4" classes="flex flex-col gap-6">
+			<Card
+			title="Friday, May 30th"
+			subtitle="8-11pm ET/5-8pm PT: primetime talks featuring Isaac Held (in conversation with Nadir Jeevanjee), Jeff Masters, and Suzana Camargo"
+
+			
+		/> -->
+			<!-- <Card
+				title="Saturday, May 31st"
+				subtitle="8-11pm ET/5-8pm PT: primetime talks featuring John Morales, Kristina Dahl, and Zeke Hausfather"
+			/>
+			<Card
+				title="Sunday, June 1st"
+				subtitle="8-11pm ET/5-8pm PT: primetime talks featuring Zack Labe"
+			/> -->
+			<!-- https://www.cbsnews.com/news/noaa-ending-billion-dollar-disasters-database/?ftag=CNM-00-10aab6a&linkId=814889045 -->
+		</Col>
+	</Row>
+</Section>
+
+
+
