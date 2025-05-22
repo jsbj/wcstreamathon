@@ -10,18 +10,13 @@ export interface SocialLink {
 
 export const socialLinks: SocialLink[] = [
 	{
-		name: 'facebook',
-		link: '/',
-		icon: 'fb-icon'
+		name: 'BlueSky',
+		link: 'https://bsky.app/profile/wclivestream.bsky.social',
+		icon: 'bluesky-icon'
 	},
 	{
-		name: 'twitter',
-		link: '/',
-		icon: 'twitter-icon'
-	},
-	{
-		name: 'discord',
-		link: '/',
-		icon: 'discord-icon'
+		name: 'youtube',
+		link: 'https://www.youtube.com/@wclivestream',
+		icon: 'youtube-icon'
 	}
 ]
