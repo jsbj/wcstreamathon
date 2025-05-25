@@ -37,40 +37,40 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'WC Livestream',
 		aboutText:
-			'Weather an Climate Livestream is a non-partison organization that aims to educate and inform the public about weather and climate issues. We provide a platform for experts to share their knowledge and insights on the value of public funded science.',
+			'The Weather & Climate Livestream is a non-partisan event that aims to educate and inform the public about weather and climate issues. We provide a platform for experts to share their knowledge and insights on the value of public funded science.',
 		logo: {
 			src: '/logo.png',
 			alt: 'The WC livestream logo',
-			text: 'WC Livestream'
+			text: 'The Weather & Climate Livestream'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'About us',
+			category: 'Learn more about...',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/contact'
+					subCategory: 'how to watch',
+					subCategoryLink: '/watch'
 				},
 				{
-					subCategory: 'Learn about Weather and Climate',
+					subCategory: 'the schedule',
+					subCategoryLink: '/schedule'
+				},
+				{
+					subCategory: 'weather and climate',
 					subCategoryLink: '/learn'
 				},
 				{
-					subCategory: 'The Cuts',
+					subCategory: 'the cuts',
 					subCategoryLink: '/cuts'
 				}
 			]
 		},
 		{
-			category: 'Get in touch',
+			category: 'Get in touch:',
 			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
 					subCategoryLink: '/contact'
 				},
 				{
@@ -81,6 +81,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© WC Livestream 2025.'
+		copywriteText: '© The Weather & Climate Livestream 2025.'
 	}
 }
