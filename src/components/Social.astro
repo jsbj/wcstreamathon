@@ -1,0 +1,14 @@
+---
+const { name ,url, username } = Astro.props;
+---
+
+<a href={`https://${url}/${username}`}>{name}</a>
+
+<style>
+    a {
+        padding: 0.5 rem 1 rem;
+        color: white;
+        background-color: #4c1d95;
+        text-decoration: none;;
+    }
+</style>

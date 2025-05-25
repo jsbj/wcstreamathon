@@ -35,55 +35,30 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'WC Livestream',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Weather an Climate Livestream is a non-partison organization that aims to educate and inform the public about weather and climate issues. We provide a platform for experts to share their knowledge and insights on the value of public funded science.',
 		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			src: '/logo.png',
+			alt: 'The WC livestream logo',
+			text: 'WC Livestream'
 		}
 	},
 	footerColumns: [
-		{
-			category: 'Product',
-			subCategories: [
-				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
-				},
-				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
-				},
-				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
-				}
-			]
-		},
 		{
 			category: 'About us',
 			subCategories: [
 				{
 					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategory: 'Learn about Weather and Climate',
+					subCategoryLink: '/learn'
 				},
 				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
+					subCategory: 'The Cuts',
+					subCategoryLink: '/cuts'
 				}
 			]
 		},
@@ -100,12 +75,12 @@ export const footerNavigationData: FooterData = {
 				},
 				{
 					subCategory: 'Join us',
-					subCategoryLink: '/contact'
+					subCategoryLink: '/speakers'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© WC Livestream 2025.'
 	}
 }
