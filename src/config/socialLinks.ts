@@ -15,6 +15,11 @@ export const socialLinks: SocialLink[] = [
 		icon: 'bluesky-icon'
 	},
 	{
+		name: 'Instagram',
+		link: 'https://www.instagram.com/wclivestream/',
+		icon: 'instagram-icon'
+	},
+	{
 		name: 'youtube',
 		link: 'https://www.youtube.com/@wclivestream',
 		icon: 'youtube-icon'
