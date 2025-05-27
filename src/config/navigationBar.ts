@@ -51,14 +51,17 @@ export const navigationBarData: NavData = {
 				{ name: 'the schedule', link: '/schedule' },
 				{ name: 'the weather & climate', link: '/learn' },
 				{ name: 'the cuts', link: '/cuts' },
+				{ name: 'how to speak', link: '/speakers' },
 				{ name: 'how to contact us', link: '/contact' } //,
 				// { name: 'FAQ', link: '/faq' },
 				// { name: 'Terms', link: '/terms' }
 			]
 		},
-		{ name: 'How to watch', link: '/watch' },
+		// { name: 'How to watch', link: '/watch' },
+		{ name: 'Call your reps', link: '/act' },
 		// { name: 'Contact', link: '/contact' }
 	],
 	// navActions: [{ name: 'Take action', link: '/speakers', style: 'primary', size: 'lg' }]
-	navActions: [{ name: 'Want to speak?', link: '/speakers', style: 'primary', size: 'lg' }]
+	// navActions: [{ name: 'Want to speak?', link: '/speakers', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Watch', link: '/watch', style: 'primary', size: 'lg' }]
 }

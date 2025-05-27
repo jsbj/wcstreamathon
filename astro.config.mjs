@@ -7,6 +7,9 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+  redirects: {
+    "/act": "https://5calls.org/issue/climate-weather-research-funding-cuts/"
+  },
   site: "https://foxi.netlify.app/",
   integrations: [
     tailwind(),
