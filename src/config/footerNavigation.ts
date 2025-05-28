@@ -37,7 +37,7 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'WC Livestream',
 		aboutText:
-			'The Weather & Climate Livestream is a non-partisan event that aims to educate and inform the public about weather and climate issues. We provide a platform for experts to share their knowledge and insights on the value of public funded science.',
+			'The Weather & Climate Livestream is a non-partisan event that aims to share climate and weather science with the American public.',
 		logo: {
 			src: '/logo.png',
 			alt: 'The WC livestream logo',
