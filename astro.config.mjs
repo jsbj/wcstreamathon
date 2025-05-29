@@ -9,7 +9,8 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   redirects: {
     "/act": "https://5calls.org/issue/climate-weather-research-funding-cuts/",
-    "/watch": "https://www.youtube.com/@wclivestream/live"
+    "/watch": "https://www.youtube.com/@wclivestream/live",
+    "/catchup": "https://www.youtube.com/playlist?list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_"
   },
   site: "https://foxi.netlify.app/",
   integrations: [
