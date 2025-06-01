@@ -13,7 +13,9 @@ export default defineConfig({
     "/live": "https://www.youtube.com/@wclivestream/live",
     "/catchup": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/tumblr": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
-    "/blorbo": "https://www.tumblr.com/communities/weather-n-climate-livestreams"
+    "/blorbo": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
+    "/more": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
+    "/next": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview"
   },
   site: "https://foxi.netlify.app/",
   integrations: [
