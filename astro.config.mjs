@@ -12,6 +12,7 @@ export default defineConfig({
     "/watch": "https://www.youtube.com/@wclivestream",
     "/live": "https://www.youtube.com/@wclivestream",
     "/catchup": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
+    "/rewatch": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/tumblr": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
     "/blorbo": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
     "/more": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
