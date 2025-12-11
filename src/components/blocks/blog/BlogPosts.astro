@@ -21,9 +21,11 @@ type Props = {
 const { data: allPosts } = Astro.props
 
 // Function to sort posts by date
-const sortedPosts = allPosts.sort((a: any, b: any) => {
-	return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
-})
+const sortedPosts = allPosts
+
+//.sort((a: any, b: any) => {
+//	return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+//})
 ---
 
 <Section>
@@ -35,13 +37,11 @@ const sortedPosts = allPosts.sort((a: any, b: any) => {
 			sortedPosts.map((post: any) => (
 				<Col span="4">
 					<Post
-						link={`/blog/${post.id}`}
+						link_href={post.data.description}
 						title={post.data.title}
-						subtitle={`By ${post.data.author} on ${new Date(post.data.pubDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}`}
-						image={post.data.image}
+						subtitle={`By ${post.data.author}`}
 						tags={post.data.tags}
 					>
-						{post.data.description}
 					</Post>
 				</Col>
 			))

@@ -10,6 +10,11 @@ import Layout from '../../layouts/Layout.astro'
 import Hero from '../../components/blocks/hero/PageHeader.astro'
 import BlogPosts from '../../components/blocks/blog/BlogPosts.astro'
 
+import Section from '../../components/ui/Section.astro'
+import Row from '../../components/ui/Row.astro'
+import Col from '../../components/ui/Col.astro'
+import { Image } from 'astro:assets'
+
 // Data
 import { getCollection } from 'astro:content'
 
@@ -22,14 +27,29 @@ const SEO = {
 }
 // - Page Header
 const header = {
-	title: 'The <strong>Foxi</strong> Blog. Tips, Updates & Stories',
-	text: 'Stay informed, stay productive. All the latest from the world of Foxi.'
+	title: 'The Weather & Climate Livestream',
+	text: 'From May 28th to June 1st, 2025, ' //Stay informed, stay productive. All the latest from the world of Foxi.'
 }
 
 const allPosts = await getCollection('blog')
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<Hero title={header.title} text={header.text} />
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
+			<h1>💯 HOURS TO SAVE AMERICA'S FORECASTS</h1>
+			<p class="pb-0 text-lg" style="color: white;">Whether it's tomorrow's temperatures or the sea level in fifty years, Americans need to plan for our futures. For generations, the US government has invested in <a href="/learn">the science that helps us do so</a>, building one of the greatest meteorology and climate science communities in the world. </p>
+			<p class="pb-0 text-lg" style="color: white;">Throughout 2025, this community have been thwarted in our mission of serving the public due to <a href="/cuts">substantial cuts and firings</a>. To show the value of continued funding for weather and climate science, from May 28th to June 1st, 2025, meteorologists and climate scientists from across America joined together to share their research with the American public. In response, our viewers made 12,000 calls to Congress, asking to maintaining funding.</p>
+			<p class="pb-0 text-lg" style="color: white;">Please enjoy some of the wonderful talks from the Livestream below. Thank you for watching, and for your support!</p>
+			<p>&nbsp;</p>
+			<!-- <Button size="lg" link="/">Get started for free</Button> -->
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
 	<BlogPosts data={allPosts} />
 </Layout>

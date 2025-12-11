@@ -23,29 +23,25 @@ import Badge from '../Badge.astro'
 type Props = {
 	title?: string
 	subtitle?: string
-	image?: any
-	link?: string
+	link_href?: string
 	classes?: string
 	tags?: string[]
 }
 const {
 	title = '',
 	subtitle,
-	image,
-	link,
+	link_href,
 	classes = '!shadow-none border border-neutral-100 dark:border-neutral-800',
 	tags
 } = Astro.props
 ---
 
 <Card classes={classes}>
-	{image && <Image src={image} alt={title} width={600} height={400} />}
 	<CardBody>
 		<h3 class="post-title">
-			<a href={link}>{title}</a>
+			<a href={link_href}>{title}</a>
 		</h3>
 		<h4 class="post-subtitle">{subtitle}</h4>
-		<slot />
 	</CardBody>
 
 	{
