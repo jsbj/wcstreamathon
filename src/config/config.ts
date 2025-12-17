@@ -34,3 +34,10 @@ export const configData: Config = {
 	mode: 'dark',
 	scrollAnimations: true
 }
+
+export default defineConfig({
+  redirects: {
+    "/ncar_at_agu_location": {
+      status: 302,
+      destination: "/ncar_at_agu"
+    }}})
