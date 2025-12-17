@@ -1,0 +1,30 @@
+---
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/HomeCTA.astro'
+import LearnFeatures from '../components/blocks/features/LearnFeatureCards.astro'
+import ScheduleFeatures from '../components/blocks/features/ScheduleCards.astro'
+import Features from '../components/blocks/features/FeatureCards.astro'
+import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
+import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
+import CTA from '../components/blocks/CTA/BasicDark.astro'
+
+// - Footer
+import Footer from '../components/Footer.astro';
+
+// Content
+// - Testimonial background
+import testimonialBackground from '../assets/testimonial-bg-01.webp'
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Livestream',
+	description:
+		"Join us starting May 28th, as meteorologists and climate scientists from across the US share their research and answer your questions."
+}
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	Check back here for the location for the gathering and interviews for NCAR at AGU!
+</Layout>
