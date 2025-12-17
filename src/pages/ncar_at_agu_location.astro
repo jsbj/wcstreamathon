@@ -10,7 +10,8 @@ import Features from '../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
-
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
 // - Footer
 import Footer from '../components/Footer.astro';
 
@@ -26,5 +27,13 @@ const SEO = {
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	Check back here for the location for the gathering and interviews for NCAR at AGU!
+	
+	<Row>		<Col span="2" />
+				<Col span="8" align="center">
+	<h1>Check back here for the location for the gathering and interviews for NCAR at AGU!</h1>
+				</Col>
+		<Col span="2" />
+
+
+</Row>
 </Layout>
