@@ -35,9 +35,3 @@ export const configData: Config = {
 	scrollAnimations: true
 }
 
-export default defineConfig({
-  redirects: {
-    "/ncar_at_agu_location": {
-      status: 302,
-      destination: "/ncar_at_agu"
-    }}})

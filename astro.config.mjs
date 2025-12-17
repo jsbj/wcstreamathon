@@ -16,7 +16,8 @@ export default defineConfig({
     "/tumblr": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
     "/blorbo": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
     "/more": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
-    "/next": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview"
+    "/next": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
+    "/ncar_at_agu_location": "/ncar_at_agu"
   },
   site: "https://foxi.netlify.app/",
   integrations: [
