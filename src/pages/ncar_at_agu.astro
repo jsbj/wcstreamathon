@@ -10,6 +10,7 @@ import Features from '../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
 import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
+import Section from '../components/ui/Section.astro'
 import Row from '../components/ui/Row.astro'
 import Col from '../components/ui/Col.astro'
 // - Footer
@@ -27,13 +28,31 @@ const SEO = {
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
 	<Row>		<Col span="2" />
 				<Col span="8" align="center">
-	<h1>Check back here for the location for the gathering and interviews for NCAR at AGU!</h1>
+	<h1>#SaveNCAR at AGU, Thursday, Dec 18th:</h1>
+	<h2>12:15pm - Group Photo/Video</h2>
+	<p class="pb-0 text-lg" style="color: white;">We want to get as many AGU paticipants as possible to join us to show our love for NCAR. We'll meet at the "science strong" wall across from the Plenary Hall at the entrance to the convention center.</p>
+
+	<h2>1pm - Town Hall</h2>
+	<p class="pb-0 text-lg" style="color: white;">Town Hall with UCAR president Antonio Busalacchi, <a href="https://agu.confex.com/agu/agu25/meetingapp.cgi/Session/278500">What We Stand to Lose: Protecting NSF NCAR</a> in La Nouvelle C.</p>
+
+	<h2>1:30pm to 5:30pm - Interviews</h2>
+	<p class="pb-0 text-lg" style="color: white;">Come tell us why NCAR is important for your science, so that we can compile a video for the public to understand why this lab is such a treasure. Come to PJs Coffee on the first floor in front of Hall C and look for the person with the "We ❤️ NCAR" sign, and we will interview as many people as we can.</p>
 				</Col>
 		<Col span="2" />
+	</Row>	
+		</Section>
 
+		<Section padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
 
-</Row>
+	<Row>		<Col span="2" />
+				<Col span="8" align="center">
+&nbsp;
+					</Col>
+		<Col span="2" />
+	</Row>
+	</Section>
+
 </Layout>
