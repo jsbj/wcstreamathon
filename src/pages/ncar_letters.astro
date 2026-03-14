@@ -31,7 +31,10 @@ const header = {
 	text: 'From May 28th to June 1st, 2025, ' //Stay informed, stay productive. All the latest from the world of Foxi.'
 }
 
-const allPosts = await getCollection('letter')
+
+const allPosts = (await getCollection('letter')).sort(
+  (a, b) => a.data.author.localeCompare(b.data.author)
+);
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
