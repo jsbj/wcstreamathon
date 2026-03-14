@@ -1,0 +1,64 @@
+---
+// Blog Index Page
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import LetterPosts from '../components/blocks/letter/LetterPosts.astro'
+
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import { Image } from 'astro:assets'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Livestream',
+	description:
+		"For 100 hours from May 28th to June 1st 2025, meteorologists and climate scientists from across the US shared their research and answered your questions, all with the goal of saving America's forecasts."
+}
+// - Page Header
+const header = {
+	title: 'The Weather & Climate Livestream',
+	text: 'From May 28th to June 1st, 2025, ' //Stay informed, stay productive. All the latest from the world of Foxi.'
+}
+
+const allPosts = await getCollection('letter')
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+<!--	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h1><a href="/act">#SaveNCAR!!!</a></h1>
+			<h1><a href="/act">(click for more info)</a></h1>
+		</Col>
+		<Col span="2" />
+	</Row>
+	</Section>
+-->
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
+			<h1>Letters in response to NSF DCL</h1>
+			<p class="pb-0 text-lg" style="color: white;">Read these letters written in response to the <a href="https://www.nsf.gov/funding/information/dcl-nsf-intent-restructure-critical-weather-infrastructure">NSF's Dear Colleague Letter</a> in support of NCAR:</p>
+			<p>&nbsp;</p>
+			<!-- <Button size="lg" link="/">Get started for free</Button> -->
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+	<LetterPosts data={allPosts} />
+</Layout>

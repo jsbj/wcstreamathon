@@ -1,0 +1,45 @@
+---
+// Blog Posts grid Section
+// ------------
+// Description: A grid of blog posts sorted by date in a 3 column layout.
+// Properties:
+// - data: An array of blog posts
+
+// Components
+// - Layout
+import Section from '../../../components/ui/Section.astro'
+import Row from '../../../components/ui/Row.astro'
+import Col from '../../../components/ui/Col.astro'
+// - UI
+import Post from '../../../components/ui/cards/LetterCard.astro'
+import TagNavigation from '../../../components/ui/blog/TagNavigation.astro'
+
+// Props
+type Props = {
+	data: any
+}
+const { data: allPosts } = Astro.props
+
+// Function to sort posts by date
+const sortedPosts = allPosts
+
+//.sort((a: any, b: any) => {
+//	return new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
+//})
+---
+
+<Section>
+	<Row>
+		{
+			sortedPosts.map((post: any) => (
+				<Col span="4">
+					<Post
+						link_href={post.data.link}
+						author={post.data.author}
+					>
+					</Post>
+				</Col>
+			))
+		}
+	</Row>
+</Section>

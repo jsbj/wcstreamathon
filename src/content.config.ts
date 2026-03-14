@@ -14,6 +14,16 @@ const blog = defineCollection({
 		})
 })
 
+const letter = defineCollection({
+	loader: glob({ pattern: '**/*.md', base: './src/content/letter' }),
+	schema: () =>
+		z.object({
+			author: z.string(),
+			link: z.string()
+		})
+})
+
 export const collections = {
-	blog
+	blog,
+	letter
 }
