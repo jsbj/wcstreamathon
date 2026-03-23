@@ -1,4 +1,4 @@
 ---
-author: 'Richard Behnke (formerly at NSF for 40 years, 30 as Head of Geospace)'
+author: 'Richard Behnke (former Head of Geospace, NSF)'
 link: 'ncar_dcl_responses/Individual_Behnke.pdf'
 ---
