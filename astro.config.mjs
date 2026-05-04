@@ -17,9 +17,10 @@ export default defineConfig({
     "/blorbo": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
     "/more": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
     "/next": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
-    "/ncar_at_agu_location": "/ncar_at_agu"
+    "/ncar_at_agu_location": "/ncar_at_agu",
+    "/volunteer": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410"
   },
-  site: "https://foxi.netlify.app/",
+  site: "https://wclivestream.com/",
   integrations: [
     tailwind(),
     icon(),

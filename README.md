@@ -1,77 +1,10 @@
-# Foxi - Astro Theme
+# The Weather & Climate Livestream website
 
-Open-source Astro website template with fully responsive, customizable TailwindCSS components.
+Here is the code for [wclivestream.com](https://wclivestream.com), built using an [Astro](https://astro.build/) template called [Foxi](https://astro.build/themes/details/foxi).
 
-![just-the-basics](https://oxygenna-themes.b-cdn.net/foxi-astro/foxi.png)
+## To build or not to build?
 
-[![View live Demo](https://oxygenna-themes.b-cdn.net/foxi-astro/button-demo.svg)](https://foxi.netlify.app)
-[![Page Speed Insights (100%)](https://oxygenna-themes.b-cdn.net/foxi-astro/button-pagespeed.svg)](https://pagespeed.web.dev/analysis/https-foxi-netlify-app/c9ig3t85mu?form_factor=desktop)
-
-## Introduction
-
-### About
-
-Foxi is a free, highly customizable, and production-ready template for Astro, utilizing Tailwind CSS components. Designed with developers in mind, Foxi offers a solid foundation for building modern, high-performance websites quickly and efficiently.
-
-![just-the-basics](https://oxygenna-themes.b-cdn.net/foxi-astro/pagespeedscore.svg)
-
-### Features
-
-- **Built with Tailwind CSS:** Powered by Tailwind CSS for rapid UI development and responsive design.
-- **Perfect Scores in PageSpeed Insights:** Achieve perfect 100s for both desktop and mobile performance.
-- **Light & Dark Mode Support:** Seamlessly switch between light and dark themes to suit user preferences.
-- **Fully Responsive & Customizable:** Ensure your site looks great on any device, with easy customization to match your brand’s identity.
-- **SEO-friendly:** Optimized for search engines to improve visibility and organic traffic.
-- **Pre-designed Pages:** Includes a variety of pages such as Home, Pricing, Features, Contact, and more, to get you started quickly.
-- **Blog with MDX Support & Tags:** Create dynamic blog content with Markdown and JSX, complete with tagging for better organization.
-- **Easy Updates with JSON Files:** Simplify content management and updates using structured JSON files.
-- **Page Loading & Transition Animations:** Enhance user experience with smooth loading and transition effects.
-- **Clean Code & Folder Structure:** Maintain a well-organized codebase that’s easy to navigate and extend.
-- **Heroicons by Tailwind:** Access a wide range of high-quality icons to use across your site.
-- **Built-in Contact Form:** Ready-to-use contact form included.
-- **Utilizes WindUI Components:** Integrates optional WindUI TailwindCSS components.
-- **Modular Design:** The template is organized into reusable blocks enabling easy customization and expansion.
-- **Integrated Analytics:** Includes integrated Google Analytics and Google Tag Manager functionalities.
-- **Sitemap Included:** Includes a sitemap to enhance website navigation and search engine indexing.
-
-### Upgrade to Pro Version
-
-| Feature                   | Free Version               | Pro Version                                                      |
-| :------------------------ | :------------------------- | :--------------------------------------------------------------- |
-| Tailwind CSS              | ✅                         | ✅                                                               |
-| Mobile Responsive         | ✅                         | ✅                                                               |
-| SEO-Friendly              | ✅                         | ✅                                                               |
-| i18n Multilingual Support | ❌                         | ✅                                                               |
-| Keystatic CMS             | ❌                         | ✅                                                               |
-| Content Collections       | ✅                         | ✅                                                               |
-| Mega Menu                 | ❌                         | ✅                                                               |
-| Video Popup               | ❌                         | ✅                                                               |
-| Lottie File Integration   | ❌                         | ✅                                                               |
-| Homepage Variations       | ❌                         | ✅                                                               |
-| Features Page Variations  | ❌                         | ✅                                                               |
-| Integrations Page         | ❌                         | ✅                                                               |
-| Advanced Pricing Page     | ❌                         | ✅                                                               |
-| Blog Collection           | ✅                         | ✅                                                               |
-| Blog Categories           | ✅                         | ✅                                                               |
-| Blog Authors              | ❌                         | ✅                                                               |
-| Post Pagination           | ❌                         | ✅                                                               |
-| eGuides Collection        | ❌                         | ✅                                                               |
-| Roadmap Page              | ❌                         | ✅                                                               |
-| SignUp Page               | ❌                         | ✅                                                               |
-| Changelog Page            | ✅                         | ✅                                                               |
-| FAQ Page                  | ✅                         | ✅                                                               |
-| Terms Page                | ✅                         | ✅                                                               |
-| Working Contact Page      | ❌                         | ✅                                                               |
-| Total Pages               | 10                         | 20+                                                              |
-|                           |                            |                                                                  |
-| Free Updates              | ✅                         | ✅                                                               |
-| License                   | MIT                        | Commercial                                                       |
-|                           |                            |                                                                  |
-| Pricing                   | Free                       | $79.99                                                           |
-|                           | Continue with Free version | [View Pro Version](https://astro.build/themes/details/foxi-pro/) |
-
-[![Get Pro Version](https://oxygenna-themes.b-cdn.net/foxi-pro-astro/primary-button-get-foxi-pro.svg)](https://oxygenna.lemonsqueezy.com/buy/2e32ec07-aa31-45a4-835d-8ebb7f6048cc)
-[![View Foxi Pro live Demo](https://oxygenna-themes.b-cdn.net/foxi-pro-astro/secondary-button-foxi-pro-demo.svg)](https://foxi-pro.netlify.app/)
+Once you fork the website, there's two ways to 
 
 ## Getting Started
 
@@ -201,14 +134,8 @@ By default, the site uses an automatic mode switcher, allowing it users to switc
 
 If you need to enforce a specific theme, you can set the class above as **`mode-light`** or **`mode-dark`**. When **`mode-light`** is applied, the site will consistently display in light mode, and the switcher will not be functional. Similarly, **`mode-dark`** will force the site to dark mode, with the switcher rendered non-functional. These settings allow you to maintain a fixed appearance across the site regardless of user preferences or system settings.
 
-## License
+## Foxi License
 
 Copyright © 2024 - Designed & Developed by [Oxygenna](http://www.oxygenna.com/)
 
 Released under the MIT license.
-
-## Join the Community
-
-You can join our community on [Discord](https://discord.gg/YC5Eup8ZEx)!
-
-[![Hire Us](https://oxygenna-themes.b-cdn.net/foxi-astro/hireus.png)](mailto:info@oxygenna.com,christos@oxygenna.com)
