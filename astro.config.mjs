@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   redirects: {
     //"/act": "https://5calls.org/issue/ncar-national-center-for-atmospheric-research/",
-    "/watch": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
+    "/watch": "https://www.youtube.com/@wclivestream?sub_confirmation=1",
     "/live": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/catchup": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/rewatch": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",

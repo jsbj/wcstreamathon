@@ -4,25 +4,19 @@ Here is the code for [wclivestream.com](https://wclivestream.com), built using a
 
 ## To build or not to build?
 
-Once you fork the website, there's two ways to 
-
-## Getting Started
-
-### Commands
-
-After downloading the template, you'll need to install some dependencies. Once that's done, you can run it on your local server. Check out the package.json file to see what scripts are available.
+Once you fork the website, you have a few different options. You can edit it directly through GitHub and submit a pull request. You can clone it to your computer, commit your changes and and then submit a pull request. In either of these two options, you will not be able to see what your changes look like directly. If you want to be able to do that, you will need to set up node.js on your computer:
 
 | Command           | Action                                                                                                   |
 | :---------------- | :------------------------------------------------------------------------------------------------------- |
 | `nvm use ...`     | [Install node js](https://nodejs.org/en/download/) You will need to use Node.js version 20.3.0 or later. |
 | `npm install`     | Installs dependencies                                                                                    |
 | `npm run dev`     | Starts local dev server at `localhost:4321`                                                              |
-| `npm run build`   | Build your production site to `./dist/`                                                                  |
-| `npm run preview` | Preview your build locally, before deploying                                                             |
+
+Then you'll be able to look at the local version of the website by going to `localhost:4321` in your browser.
 
 ### Folder structure
 
-Inside Foxi Astro project, you'll see the following folders and files:
+There are many many folders and files. Here's how to find the ones that you will be most interested in:
 
 ```plaintext
 /
