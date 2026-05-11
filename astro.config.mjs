@@ -19,7 +19,8 @@ export default defineConfig({
     "/next": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
     "/ncar_at_agu_location": "/ncar_at_agu",
     "/letters": "https://forms.gle/hTom2HpDgw4yZBi69",
-    "/volunteer": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410"
+    "/volunteer": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410",
+    "/speakers": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410"
   },
   site: "https://wclivestream.com/",
   integrations: [
