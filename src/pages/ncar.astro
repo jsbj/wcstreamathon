@@ -1,0 +1,70 @@
+---
+// Blog Index Page
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import LetterPosts from '../components/blocks/letter/LetterPosts.astro'
+
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import { Image } from 'astro:assets'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Livestream - NCAR',
+	description:
+		"Save the National Center for Atmospheric Research!"
+}
+// - Page Header
+const header = {
+	title: 'The Weather & Climate Livestream',
+	text: 'From May 28th to June 1st, 2025, ' //Stay informed, stay productive. All the latest from the world of Foxi.'
+}
+
+
+const allPosts = (await getCollection('letter')).sort(
+  (a, b) => a.data.author.localeCompare(b.data.author)
+);
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+<!--	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h1><a href="/act">#SaveNCAR!!!</a></h1>
+			<h1><a href="/act">(click for more info)</a></h1>
+		</Col>
+		<Col span="2" />
+	</Row>
+	</Section>
+-->
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
+			<h1>Protect the National Center for Atmospheric Research!</h1>
+			<p class="pb-0 text-lg" style="color: white;">The National Center for Atmospheric Research is a global center for weather and climate science - and <a href="https://www.science.org/content/article/white-house-plan-break-iconic-u-s-climate-lab-moves-forward">it's under attack</a>! Losing NCAR would <a href="https://www.zmescience.com/ecology/5-ways-your-life-could-become-more-dangerous-if-the-government-proceeds-with-dismantling-ncar/">endanger Americans</a> and <a href="https://wclivestream.com/ncar_dcl_responses/Academy-NCAR-Comment-Letter.pdf">raise housing prices</a>.</p>
+			<h3>Want to protect NCAR? Here's three great things you can do:</h3>
+			<h4><a href="https://5calls.org/issue/ncar-national-center-for-atmospheric-research/">Call your representatives</a> and tell them to put protection for NCAR into law.</h4>
+			<h4><a href="https://www.youtube.com/watch?v=pT8dCoZgH_M">Share our video</a> spreading the world about the benefits of NCAR and the threats it faces.</h4>
+			<h4><a href="/ncar_letters">Read and share these amazing responses</a> to the NSF's <a href="https://www.nsf.gov/funding/information/dcl-nsf-intent-restructure-critical-weather-infrastructure">Dear Colleagues letter</a>:</h4>
+			<p>&nbsp;</p>
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+	<LetterPosts data={allPosts} />
+</Layout>

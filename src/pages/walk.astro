@@ -1,0 +1,64 @@
+---
+// Blog Index Page
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import BlogPosts from '../components/blocks/blog/BlogPosts.astro'
+
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import { Image } from 'astro:assets'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'The Weather & Climate Livestream',
+	description:
+		"For 100 hours from May 28th to June 1st 2025, meteorologists and climate scientists from across the US shared their research and answered your questions, all with the goal of saving America's forecasts."
+}
+// - Page Header
+const header = {
+	title: 'The Weather & Climate Livestream',
+	text: '' //Stay informed, stay productive. All the latest from the world of Foxi.'
+}
+
+const allPosts = await getCollection('blog')
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<!-- <Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h2><a href="/act">Click here to learn how you can help save the National Center for Atmospheric Research (NCAR)!!!</a></h2>
+			<h2><a href="/ncar_letters">Click here to read a selection of the hundreds of letters written in defense of NCAR</a></h2>
+		</Col>
+		<Col span="2" />
+	</Row>
+	</Section> -->
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
+			<h1>We're walking from NYC to DC!</h1>
+			<p class="pb-0 text-lg" style="color: white;">We're bringing your letters to Congress to tell them to protect weather and climate science funding and <a href="/ncar">the National Center for Atmosphere Research</a>!</p>
+			<p class="pb-0 text-lg" style="color: white;">Share your letters <a href="/letters">here!</a></p>
+			<p class="pb-0 text-lg" style="color: white;">The walk will be starting at the Great Hill in Central Park on Saturday, May 23rd at 10am. Join us!</p>
+			<p>&nbsp;</p>
+			<!-- <Button size="lg" link="/">Get started for free</Button> -->
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+</Layout>
