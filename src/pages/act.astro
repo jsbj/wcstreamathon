@@ -21,20 +21,41 @@ import { getCollection } from 'astro:content'
 // Content
 // - SEO
 const SEO = {
-	title: 'The Weather & Climate Livestream',
+	title: 'Act now to save America’s forecasts',
 	description:
-		"For 100 hours from May 28th to June 1st 2025, meteorologists and climate scientists from across the US shared their research and answered your questions, all with the goal of saving America's forecasts."
+		"Concrete actions you can take in 5 minutes today to save America’s forecasts and protect our future."
 }
 // - Page Header
 const header = {
-	title: 'The Weather & Climate Livestream',
-	text: 'From May 28th to June 1st, 2025, ' //Stay informed, stay productive. All the latest from the world of Foxi.'
+	title: 'Act now to save America’s forecasts',
+	text: 'Concrete actions you can take in 5 minutes today to save America’s forecasts and protect our future.' //Stay informed, stay productive. All the latest from the world of Foxi.'
 }
 
 const allPosts = await getCollection('blog')
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h3>Act now to save America’s forecasts</h3>
+			<h4>Call your representatives (link coming soon!) and tell them to protect America’s forecasts</h4>
+			<h4><a href="/write">Write to your representatives!</a> We will be hand delivering letters in support of science to the US government on June 3, 2026.</h4>
+			<h4><a href="/ncar_letters">Read and share these amazing responses</a> to the NSF's <a href="https://www.nsf.gov/funding/information/dcl-nsf-intent-restructure-critical-weather-infrastructure" target="_blank">Dear Colleagues letter</a>.</h4>
+			<p>&nbsp;</p>
+
+			<p class="pb-0 text-lg" style="color: white;">180,000 people watched our 2025 Livestream and logged more than 30,000 calls to Congress. Thank you for joining our community! <a href="https://www.nytimes.com/2025/05/30/climate/science-livestream-budget-cuts.html" target="_blank">We made a difference last year</a> and we are excited to make it easy for your voice to be heard this year.</p>
+			
+			<p class="pb-0 text-lg" style="color: white;"><a href="/save-ncar">Visit this page</a> to learn how you can join us in supporting the National Center for Atmospheric Research (NCAR).</p>
+			<p>&nbsp;</p>
+		</Col>
+		<Col span="2" />
+	</Row>
+	</Section>
+</Layout>
+
+<!-- <Layout title={SEO.title} description={SEO.description}>
 	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
 	<Row>
 		<Col span="2" />
@@ -48,4 +69,4 @@ const allPosts = await getCollection('blog')
 		<Col span="2" />
 	</Row>
 	</Section>
-</Layout>
+</Layout> -->

@@ -1,0 +1,116 @@
+---
+// Blog Index Page
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import LetterPosts from '../components/blocks/letter/LetterPosts.astro'
+
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import { Image } from 'astro:assets'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'About the Weather & Climate Livestream',
+	description:
+		"Our mission is to help everyone in the US understand the value of federally funded science, and encourage them to contact their representatives to protect it."
+}
+// - Page Header
+const header = {
+	title: 'About the Weather & Climate Livestream',
+	text: 'Our mission is to help everyone in the US understand the value of federally funded science, and encourage them to contact their representatives to protect it.' //Stay informed, stay productive. All the latest from the world of Foxi.'
+}
+
+
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+<!--	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h1><a href="/act">#SaveNCAR!!!</a></h1>
+			<h1><a href="/act">(click for more info)</a></h1>
+		</Col>
+		<Col span="2" />
+	</Row>
+	</Section>
+-->
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
+			<h1>About the Weather & Climate Livestream</h1>
+
+			<p class="pb-0 text-lg" style="color: white;">Our mission is to ensure that everyone in the American public understands the value of federally funded science, and encourage them to contact their representatives to protect it. We do this primarily by inviting the public to connect with members of the scientific community through our Livestream. We present a broad view of who belongs in the scientific community by elevating the voices of those who enable the practice and application of science (for example, through communication and administrative work).</p>
+
+			<p class="pb-0 text-lg" style="color: white;">Learn more about livestream organizers and how you can get in touch <a href="/contact">here</a>.</p>
+
+
+			<h3>FAQs</h3>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			<b>Who is sponsoring this event?</b>
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			This is an ad-hoc event put on by concerned weather and climate scientists. We do not speak on behalf of our organizations and we are not receiving any federal funding for this event.
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			<b>Are you affiliated with a political party?</b>
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			We are a non-partisan organization. We believe that every American deserves actionable weather and climate information that keeps them safe and healthy. In this <a href="https://youtube.com/shorts/zyTr9XZ_oV0?si=lAwq6dVg6pfMl55U" target="_blank">clip</a> from our inaugural event, former NOAA budget analyst Sabrina Valenti says it best: “We don’t care what your personal opinions are. We want you to be safe, we want you to be healthy, we want you to be able to enjoy an unburdened life, and to enjoy the outdoors. When you lose staff at NOAA, like us, who really care about that, every American suffers.”
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			<b>What happens during the livestream?</b>
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			Our goal is to help the public engage with the science that their tax dollars make possible! Thus a primary feature of the Livestream events is having hundreds of US-based scientists giving talks on their work and why it matters for every American. The public are also encouraged to ask questions to the scientists, and we have hosts who lead discussions and engage the audience and speaker in conversation about the research being presented. In addition to regular science talks the Livestreams also feature panel discussions, musical interludes, interactive data analysis demonstrations, and special late-night segments. 
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			<b>How do you think the livestream can help "save America's forecasts"?</b>
+			</p> 
+
+			<p class="pb-0 text-lg" style="color: white;">
+			We hope that our events will remind the American public of the importance of weather and climate science for prediction and communication of day-to-day weather, extreme weather events, and climate change. We believe that by showing what our science makes possible, and allowing the public to put their questions directly to the scientists themselves, we can inspire action to preserve it. 
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			<b>What funding cuts have been made and how have they impacted weather and climate research?</b>
+			</p>
+
+			<p class="pb-0 text-lg" style="color: white;">
+			<!-- The cuts are really hard to keep track of, including for weather and climate scientists, let alone the American public.  -->
+			Visit our <a href="/cuts">Funding Cuts</a> page to see articles explaining the cuts to federal science funding and the impact of this on our forecasts. 
+			</p>
+
+			<p>&nbsp;</p>
+			<!--
+
+			<p class="pb-0 text-lg" style="color: white;">The Earth science community in the US and beyond have submitted hundreds of responses to the <a href="https://www.nsf.gov/funding/information/dcl-nsf-intent-restructure-critical-weather-infrastructure">NSF's Dear Colleague Letter</a> urging the NSF to protect the National Center for Atmospheric Research (NCAR). The NSF has <a href="https://www.nytimes.com/2026/03/13/climate/ncar-breakup-plan-nasa-noaa.html">said that these letters will not be made public</a>. This page aims to publish as many as we can.</p><p class="pb-0 text-lg" style="color: white;">We currently have {allPosts.length} letters. If you would like to share yours, please email <a href="mailto:organizers@wclivestream.com">organizers@wclivestream.com</a>. Also, see <a href="https://royalsociety.org/news/2026/02/statement-on-us-administrations-repeal-of-endangerment-finding/">the statement from the UK's Royal Society</a>, which calls on the US government to protect NCAR.</p><p class="pb-0 text-lg" style="color: white;">If you're inspired by these letters, please <a href="https://5calls.org/issue/ncar-national-center-for-atmospheric-research/">call your representatives</a> and tell them to #SaveNCAR!</p> -->
+			
+			<!-- <Button size="lg" link="/">Get started for free</Button> -->
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+</Layout>

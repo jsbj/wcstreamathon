@@ -37,7 +37,7 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'WC Livestream',
 		aboutText:
-			'The Weather & Climate Livestream is a non-partisan event that aims to share climate and weather science with the American public.',
+			'The Weather & Climate Livestream is a non-partisan event that aims to connect the American public with the climate and weather science community.',
 		logo: {
 			src: '/logo.png',
 			alt: 'The WC livestream logo',
@@ -53,17 +53,17 @@ export const footerNavigationData: FooterData = {
 					subCategoryLink: '/watch'
 				},
 				{
-					subCategory: 'the schedule',
-					subCategoryLink: '/schedule'
-				},
-				{
-					subCategory: 'weather and climate',
-					subCategoryLink: '/learn'
-				},
-				{
-					subCategory: 'the cuts',
-					subCategoryLink: '/cuts'
-				}
+					subCategory: 'how to act',
+					subCategoryLink: '/act'
+				} //,
+				// {
+				// 	subCategory: 'weather and climate',
+				// 	subCategoryLink: '/learn'
+				// },
+				// {
+				// 	subCategory: 'the cuts',
+				// 	subCategoryLink: '/cuts'
+				// }
 			]
 		},
 		{
@@ -74,13 +74,13 @@ export const footerNavigationData: FooterData = {
 					subCategoryLink: '/contact'
 				},
 				{
-					subCategory: 'Join us',
-					subCategoryLink: '/speakers'
+					subCategory: 'Speak',
+					subCategoryLink: '/speak'
 				}
 			]
 		}
 	],
 	subFooter: {
-		copywriteText: '© The Weather & Climate Livestream 2025.'
+		copywriteText: '© The Weather & Climate Livestream 2026'
 	}
 }

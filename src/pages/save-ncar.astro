@@ -21,17 +21,20 @@ import { getCollection } from 'astro:content'
 // Content
 // - SEO
 const SEO = {
-	title: 'Contact the Weather & Climate Livestream Organizers',
+	title: 'Save NCAR',
 	description:
-		"Contact the Weather & Climate Livestream Organizers at organizers@wclivestream.com."
+		"This page is a public archive of as many letters as possible sent from scientists in response to a request for input from the National Science Foundation about the future of the National Center for Atmospheric Research (NCAR). It also provides information on how anyone can urge their representative to save NCAR."
 }
 // - Page Header
 const header = {
-	title: 'Contact the Weather & Climate Livestream Organizers',
-	text: 'Contact the Weather & Climate Livestream Organizers at organizers@wclivestream.com.' //Stay informed, stay productive. All the latest from the world of Foxi.'
+	title: 'Save NCAR',
+	text: 'This page is a public archive of as many letters as possible sent from scientists in response to a request for input from the National Science Foundation about the future of the National Center for Atmospheric Research (NCAR). It also provides information on how anyone can urge their representative to save NCAR.' //Stay informed, stay productive. All the latest from the world of Foxi.'
 }
 
 
+const allPosts = (await getCollection('letter')).sort(
+  (a, b) => a.data.author.localeCompare(b.data.author)
+);
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
@@ -53,18 +56,18 @@ const header = {
 			
 			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
 			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
-			<h1>Contact the Weather & Climate Livestream Organizers</h1>
+			<h1>Letters in response to NSF DCL</h1>
 
-			<p class="pb-0 text-lg" style="color: white;">To speak or help produce the livestream, <a href="/volunteer">fill out this form</a>.</p>
+			<p class="pb-0 text-lg" style="color: white;">The US government plans to dismantle the National Center for Atmospheric Research (NCAR). <a href="https://www.youtube.com/watch?v=pT8dCoZgH_M">Watch our video</a> to learn why NCAR is the most important weather lab in the US, and read <a href="https://www.nature.com/articles/d41586-026-01501-z">this article</a> for the latest about the scientists taking the US government to court over NCAR’s future.</p>
 
-			<p class="pb-0 text-lg" style="color: white;">To email us, use <a href="mailto:organizers@wclivestream.com">organizers@wclivestream.com</a>.</p>
+			<p class="pb-0 text-lg" style="color: white;">The Earth systems science community in the US and beyond have submitted hundreds of responses to the National Science Foundation’s <a href="https://www.nsf.gov/funding/information/dcl-nsf-intent-restructure-critical-weather-infrastructure">Dear Colleague Letter</a>, all urging the NSF to protect NCAR. The NSF has <a href="https://www.nytimes.com/2026/03/13/climate/ncar-breakup-plan-nasa-noaa.html">said that these letters will not be made public</a>. This page aims to publish as many letters as we can.</p>
 
-			<p class="pb-0 text-lg" style="color: white;">The current organizing team consists of Marc Alessi, Jonah Bloch-Johnson, Haley Crim, Paulina Czarnecki, Syl Foisy, Stella Heflin, Miriam Nielsen, Virginia Schutte, Clare Singer, and Andrew Williams.</p>
-			
-			<p class="pb-0 text-lg" style="color: white;">
-			Please note that the organizers of the Weather & Climate Livestream are volunteering in their personal capacities and not on behalf of their employers.
-			</p>
+			<p class="pb-0 text-lg" style="color: white;">We currently have {allPosts.length} letters. If you would like to share yours, please email <a href="mailto:organizers@wclivestream.com">organizers@wclivestream.com</a> Also, see <a href="https://royalsociety.org/news/2026/02/statement-on-us-administrations-repeal-of-endangerment-finding/">the statement from the UK's Royal Society</a>, which calls on the US government to protect NCAR.</p>
 
+			<div class= "rounded" style="background-color: #ce2c1e;">
+				<p class="pb-0 text-lg" style="color: white;"><b>If you're inspired by these letters, please call your representatives and tell them to defend NCAR! You can find your representatives <a href="https://5calls.org/">on this website</a>.</b></p>
+			</div>
+			<p>&nbsp;</p>
 			<p>&nbsp;</p>
 			<!--
 
@@ -75,4 +78,5 @@ const header = {
 		<Col span="2" />
 	</Row>
 </Section>
+	<LetterPosts data={allPosts} />
 </Layout>

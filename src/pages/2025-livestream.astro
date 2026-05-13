@@ -1,0 +1,73 @@
+---
+// Blog Index Page
+// ------------
+// Description: The blog index page.
+
+// Components
+// - Layout
+import Layout from '../layouts/Layout.astro'
+// - UI
+import Hero from '../components/blocks/hero/PageHeader.astro'
+import BlogPosts from '../components/blocks/blog/BlogPosts.astro'
+
+import Section from '../components/ui/Section.astro'
+import Row from '../components/ui/Row.astro'
+import Col from '../components/ui/Col.astro'
+import Button from '../components/ui/Button.astro'
+import { Image } from 'astro:assets'
+
+// Data
+import { getCollection } from 'astro:content'
+
+// Content
+// - SEO
+const SEO = {
+	title: '2025 Weather & Climate Livestream',
+	description:
+		"For 50 hours from June 1st to June 3rd 2026, scientists and science support staff from across the US will share their work and answer your questions, all with the goal of saving America's forecasts to protect America’s future."
+}
+// - Page Header
+const header = {
+	title: '2025 Weather & Climate Livestream',
+	text: 'From May 28th to June 1st, 2025, ' //Stay informed, stay productive. All the latest from the world of Foxi.'
+}
+
+const allPosts = await getCollection('blog')
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<!-- <Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<h2><a href="/act">Click here to learn how you can help save the National Center for Atmospheric Research (NCAR)!!!</a></h2>
+			<h2><a href="/ncar_letters">Click here to read a selection of the hundreds of letters written in defense of NCAR</a></h2>
+		</Col>
+		<Col span="2" />
+	</Row>
+	</Section> -->
+	<Section id="intro" padding="top" classes="bg-neutral-900 dark:bg-neutral-900">
+	<Row>
+		<Col span="2" />
+		<Col span="8" align="center">
+			<!-- <h2>🌡️ SAVE AMERICA'S <strong> FORECASTS 📈</strong></h2> -->
+			<!--  <p class="pb-0 text-lg" style="color: white;">Wed. May 28th 1pm ET/10am PT to Sun. June 1st 5:30pm ET/2:30pm PT on <a href="https://www.youtube.com/@wclivestream">YouTube:</a></p> -->
+			<h1>2025 Weather & Climate Livestream</h1>
+			<p class="pb-0 text-lg" style="color: white;">In response to sweeping cuts to federal climate and weather research proposed in 2025, we organized a100 hour-long continuous <a href="https://www.youtube.com/playlist?list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_" target="_blank">livestream</a> featuring over 200 climate scientists and meteorologists from across the United States. The event, which was covered in <a href="https://www.nytimes.com/2025/05/30/climate/science-livestream-budget-cuts.html?unlocked_article_code=1.hlA.FBAt.i18eXltgk41m&smid=url-share" target="_blank">The New York Times</a> and <a href="https://www.forbes.com/sites/marshallshepherd/2025/05/16/100-hour-streaming-marathon-to-highlight-value-of-weather-expertise/" target="_blank">Forbes</a>, drew more than 180,000 views and generated over 30,000 calls to Congressional representatives.</p>
+
+		<p class="pb-0 text-lg" style="color: white;">The goal of the stream was to increase public awareness of the value of weather and climate research and forecasting and encourage the public to use their voices to advocate for funding that keeps that science going.</p>
+
+		<p class="pb-0 text-lg" style="color: white;">The event began live on May 28th from NASA’s Goddard Institute for Space Sciences (GISS), whose employees were being forced to vacate their office at Columbia University after more than 50 years. We concluded the stream on June 1st, the first day of Atlantic hurricane season. Along the way we covered an enormous range of topics: the health effects of extreme heat and humidity, tornado science, how wetlands store carbon, and the real-world consequences of research funding cuts on weather forecasting capabilities. Below you can see a list of talks given during the stream.</p>
+
+		<p class="pb-0 text-lg" style="color: white;">The 2025 Weather & Climate Livestream organizers were Marc Alessi, Jonah Bloch-Johnson, Paulina Czarnecki, Henri Drake, Syl Foisy, Stella Heflin, Nadir Jeevanjee, Nick Lutsko, Miriam Nielsen, Tommy Stone, Andrew Williams, Lily Zhang, and anonymous members of the meteorology and climate science community.</p>
+
+		<p class="pb-0 text-lg" style="color: white;">See some of last year's talks below (click on tags to filter by topic):</p>
+
+		<p>&nbsp;</p>
+		<!-- <Button size="lg" link="/">Get started for free</Button> -->
+		</Col>
+		<Col span="2" />
+	</Row>
+</Section>
+	<BlogPosts data={allPosts} />
+</Layout>
