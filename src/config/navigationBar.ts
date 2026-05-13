@@ -54,7 +54,7 @@ export const navigationBarData: NavData = {
 				{ name: '2026 Livestream', link: '/2026-livestream' },
 				{ name: '· Watch', link: '/watch' },
 				// { name: '· Schedule', link: '/schedule' },
-				{ name: '· Speak', link: '/join-us' },
+				{ name: '· Speak', link: '/speak' },
 				// { name: '· Walk', link: '/schedule' },
 				{ name: 'Learn More', link: '/learn-more' },
 				{ name: '· The 2025 Event', link: '/2025-livestream' },
