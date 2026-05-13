@@ -21,8 +21,9 @@ export default defineConfig({
     "/ncar_letters": "/save-ncar", // keep this so that people with the old url will get to the right page
     "/letters": "/write",
     "/learn": "/science", // here for historical purposes
-    "/volunteer": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410",
-    "/speakers": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410"
+    "/speak": "https://docs.google.com/forms/d/e/1FAIpQLScDZmjBgEictxJeROviS1e7-S-4c_yCq7vMmZ_nMObxGL-Yrw/viewform?usp=sharing&ouid=110383510877769818410",
+    "/volunteer": "/speak",
+    "/speakers": "/speak"
   },
   site: "https://wclivestream.com/",
   integrations: [
