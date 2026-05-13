@@ -56,7 +56,7 @@ export const navigationBarData: NavData = {
 				// { name: '· Schedule', link: '/schedule' },
 				{ name: '· Speak', link: '/speak' },
 				// { name: '· Walk', link: '/schedule' },
-				{ name: 'Learn More', link: '/learn-more' },
+				{ name: 'Learn More', link: '/' },
 				{ name: '· The 2025 Event', link: '/2025-livestream' },
 				// { name: '· 2025 Livestream', link: '/2025-livestream' },
 				// { name: ' ┗ Save NCAR at AGU 2025', link: '/save-ncar-at-agu-2025' },
