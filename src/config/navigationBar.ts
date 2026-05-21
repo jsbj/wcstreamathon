@@ -48,7 +48,7 @@ export const navigationBarData: NavData = {
 			link: '#',
 			submenu: [
 				{ name: 'Act', link: '/act' },
-				// { name: '· Call', link: '/call' },
+				{ name: '· Call', link: '/call' },
 				{ name: '· Write to Congress', link: '/write' },
 				{ name: '· Save NCAR', link: '/save-ncar' },
 				{ name: '2026 Livestream', link: '/2026-livestream' },
