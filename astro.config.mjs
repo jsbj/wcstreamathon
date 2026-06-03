@@ -16,7 +16,8 @@ export default defineConfig({
     "/rewatch": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/tumblr": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
     "/blorbo": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
-    "/more": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
+    "/more": "https://forms.gle/FLC8tiajqh4cQcTw8",
+    "/survey": "https://forms.gle/FLC8tiajqh4cQcTw8",
     "/next": "https://docs.google.com/forms/d/10MdJwKvHYTS-7gaAECDfBX3mLN1a2OTd8YMX7eWyopU/preview",
     "/write": "https://forms.gle/hTom2HpDgw4yZBi69",
     "/ncar_letters": "/save-ncar", // keep this so that people with the old url will get to the right page
