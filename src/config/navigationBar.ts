@@ -47,17 +47,18 @@ export const navigationBarData: NavData = {
 			name: 'Menu',
 			link: '#',
 			submenu: [
-				{ name: 'Act', link: '/act' },
-				{ name: '· Call', link: '/call' },
-				{ name: '· Write to Congress', link: '/write' },
-				{ name: '· Save NCAR', link: '/save-ncar' },
+				// { name: 'Act', link: '/act' },
+				// { name: '· Call', link: '/call' },
+				// { name: '· Write to Congress', link: '/write' },
+				
 				{ name: '2026 Livestream', link: '/2026-livestream' },
-				{ name: '· Watch', link: '/watch' },
+				{ name: '2025 Livestream', link: '/2025-livestream' },
+				{ name: 'Save NCAR', link: '/save-ncar' },
+				// { name: '· Watch', link: '/watch' },
 				// { name: '· Schedule', link: '/schedule' },
-				{ name: '· Speak', link: '/speak' },
+				// { name: '· Speak', link: '/speak' },
 				// { name: '· Walk', link: '/schedule' },
 				{ name: 'Learn More about...', link: '/' },
-				{ name: '· The 2025 Event', link: '/2025-livestream' },
 				// { name: '· 2025 Livestream', link: '/2025-livestream' },
 				// { name: ' ┗ Save NCAR at AGU 2025', link: '/save-ncar-at-agu-2025' },
 				{ name: '· Science', link: '/science' },
@@ -79,5 +80,6 @@ export const navigationBarData: NavData = {
 	],
 	// navActions: [{ name: 'Take action', link: '/speakers', style: 'primary', size: 'lg' }]
 	// navActions: [{ name: 'Want to speak?', link: '/speakers', style: 'primary', size: 'lg' }]
-	navActions: [{ name: 'Act Now', link: '/act', style: 'secondary', size: 'lg' }, { name: 'Watch', link: '/watch', style: 'primary', size: 'lg' }]
+	// navActions: [{ name: 'Act Now', link: '/act', style: 'secondary', size: 'lg' }, { name: 'Watch', link: '/watch', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Watch', link: '/watch', style: 'primary', size: 'lg' }]
 }

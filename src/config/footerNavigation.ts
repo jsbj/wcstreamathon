@@ -49,13 +49,13 @@ export const footerNavigationData: FooterData = {
 			category: 'Learn more about...',
 			subCategories: [
 				{
-					subCategory: 'how to watch',
+					subCategory: 'How to watch',
 					subCategoryLink: '/watch'
-				},
-				{
-					subCategory: 'how to act',
-					subCategoryLink: '/act'
 				} //,
+				// {
+				// 	subCategory: 'how to act',
+				// 	subCategoryLink: '/act'
+				// } //,
 				// {
 				// 	subCategory: 'weather and climate',
 				// 	subCategoryLink: '/learn'
@@ -72,11 +72,12 @@ export const footerNavigationData: FooterData = {
 				{
 					subCategory: 'Contact',
 					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Speak',
-					subCategoryLink: '/speak'
-				}
+				} 
+				// ,
+				// {
+				// 	subCategory: 'Speak',
+				// 	subCategoryLink: '/speak'
+				// }
 			]
 		}
 	],
