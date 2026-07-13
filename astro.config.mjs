@@ -12,6 +12,7 @@ export default defineConfig({
     "/call": "https://5calls.org/issue/weather-climate-science-funding/",
     "/watch": "https://www.youtube.com/@wclivestream/live",
     "/live": "https://www.youtube.com/@wclivestream/live",
+    "/omb": "https://www.regulations.gov/commenton/OMB-2026-0034-0001",
     "/catchup": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/rewatch": "https://www.youtube.com/watch?v=CcWR6CdJnvQ&list=PLDDEU7mKb6z0RD8V9eXw8TH_qJ1Jtb5u_",
     "/tumblr": "https://www.tumblr.com/communities/weather-n-climate-livestreams",
